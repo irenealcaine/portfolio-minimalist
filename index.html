@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/IA.png" />
+    <link rel="icon" type="image/svg+xml" href="./IA.png" />
     <link rel="stylesheet" href="./style.css">
     <meta name="description" content="Irene portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,11 +11,44 @@
   </head>
   <body>
 
-    <div id="app">
-      <i class="ri-moon-line"></i>
+    <div id="app" class="container">
+      <i class="ri-moon-line" id="day-night-button"></i>
+
+      <header>
+        <h1 class="name">Irene Alcaine Álvarez</h1>
+        <img src="./public/IA.png" alt="" class="photo">
+        <h2 class="ocupation">Frontend developer</h2>
+      </header>
+
+
+        <div class="contact">
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/irenealcaine/" target="_blank" class="">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://github.com/irenealcaine" target="_blank" class="">
+              <i class="ri-github-line"></i>
+            </a>
+          </div>
+
+          <div class="buttons">
+            <a download="" href="./src/pdf/CV_Irene_Alcaine.pdf" class="CV-button">
+              Download CV <i class="ri-download-line"></i>
+            </a>
+
+            <div class="">
+              <a href="https://api.whatsapp.com/send?phone=346298821291&text=Hello, more information!" target="_blank" class="">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+              <a href="mailto:irenealcainealvarez@gmail.com" target="_blank" class="">
+                <i class="ri-mail-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
     </div>
 
     <script type="module" src="/main.js"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

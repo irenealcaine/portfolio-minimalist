@@ -6,21 +6,21 @@
 :root{
   /* Tipography */
   --body-font: 'Raleway', sans-serif;
-  --title-font: 'Caveat', cursive;
+  --title-font: 'Caveat', sans-serif;
 
   /* Colors */
   --light-gray:#f3f4f6;
   --dark-gray:#111827;
+}
 
-  /* Responsive */
-  @media screen and (min-width: 968px) {
-    :root {
+/* Responsive */
+@media screen and (min-width: 968px) {
+  :root {
 
-    }
   }
 }
 
-/* Main */
+/* Base */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -31,11 +31,22 @@ body{
   font-family: var(--body-font);
   background-color: var(--light-gray);
   color: var(--dark-gray);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
 }
 
 h1, h2, h3 {
   font-family: var(--title-font);
   font-weight: 700;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
 }
 
 ul {
@@ -44,16 +55,78 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+  color:inherit
 }
 
 /* Dark */
-body.dark{
+body.night{
   background-color: var(--dark-gray);
   color: var(--light-gray);
 }
 
+
+/* Main */
+
+.container{
+  width: 70%;
+}
+
+.container>i{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header>img{
+  width: 250px;
+}
+
+.social-media>a>i{
+  font-size: 1.5rem;
+
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact>div>a>i{
+  font-size: 24px;
+}
+
+.buttons{
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons>div>a>i{
+  font-size: 24px;
+}
+
+.buttons>a{
+  font-size: 16px;
+}
+
+.ri-download-line{
+  font-size: 16px;
+}
+
+.CV-button{
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+    align-items: center;
+}
