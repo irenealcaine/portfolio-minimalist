@@ -130,3 +130,54 @@ header>img{
   display: inline-flex;
     align-items: center;
 }
+
+/* tabs */
+[data-content] {
+  display: none;
+}
+
+.filters__active[data-content] {
+  display: flex;
+}
+
+.filter-tab-active {
+  background-color: #075985
+}
+
+/* portfolio */
+#portfolio{
+  gap: 1.5rem;
+}
+
+.card{
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background: linear-gradient(180deg,
+  #07598500 0%,
+  #075985 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1.5rem 1.25rem;
+  transition: .3s;
+  color:white
+}
+
+.card:hover .modal {
+  bottom: 0;
+}
