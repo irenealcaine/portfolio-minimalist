@@ -86,7 +86,7 @@ header{
 }
 
 header>img{
-  width: 250px;
+  width: 200px;
 }
 
 .social-media>a>i{
@@ -132,12 +132,38 @@ header>img{
 }
 
 /* tabs */
+
+ul{
+  display: flex;
+  justify-content: center;
+  margin:1rem auto;
+  padding:0.5rem;
+  width: fit-content;
+  border-radius: 10px;
+  gap:0.5rem;
+  background-color: #111827;
+}
+ul>button{
+  padding: 0.5rem;
+  border-radius: 10px;
+  border:none;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+ul>button:hover{
+  background-color: #075985aa;
+}
+
 [data-content] {
   display: none;
 }
 
 .filters__active[data-content] {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .filter-tab-active {
@@ -147,12 +173,14 @@ header>img{
 /* portfolio */
 #portfolio{
   gap: 1.5rem;
+
 }
 
 .card{
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  width: 250px;
 }
 
 .card img{
