@@ -49,6 +49,10 @@ h2{
   font-size: 2rem;
 }
 
+h3{
+  font-size: 1.5rem;
+}
+
 ul {
   list-style: none;
 }
@@ -68,7 +72,7 @@ body.night{
 /* Main */
 
 .container{
-  width: 70%;
+  width: 60%;
 }
 
 .container>i{
@@ -87,6 +91,8 @@ header{
 
 header>img{
   width: 200px;
+  border-radius: 100%;
+border: 5px solid #075985;
 }
 
 .social-media>a>i{
@@ -133,7 +139,7 @@ header>img{
 
 /* tabs */
 
-ul{
+section>ul{
   display: flex;
   justify-content: center;
   margin:1rem auto;
@@ -180,7 +186,7 @@ ul>button:hover{
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  width: 250px;
+  width: 230px;
 }
 
 .card img{
@@ -208,4 +214,44 @@ ul>button:hover{
 
 .card:hover .modal {
   bottom: 0;
+}
+.ri-link{
+  text-align: end;
+}
+
+#skills>div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap:1rem
+}
+
+#skills>div>ul{
+  width: 30%;
+  height: fit-content;
+  border: 1px solid #075985;
+  padding:  0.5rem 1rem;
+  border-radius: 1rem;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+#skills>div>ul>li{
+  margin-bottom: 4px;
+}
+
+ul>h3{
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+li>img{
+  height: 16px;
+  margin: 0px 4px
+}
+
+footer{
+  text-align: center;
 }
