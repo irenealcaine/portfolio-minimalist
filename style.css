@@ -36,7 +36,7 @@ body{
   justify-content: center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: var(--title-font);
   font-weight: 700;
 }
@@ -51,6 +51,10 @@ h2{
 
 h3{
   font-size: 1.5rem;
+}
+
+h4{
+  font-size: 1.2rem;
 }
 
 ul {
@@ -89,10 +93,15 @@ header{
   align-items: center;
 }
 
+.name{
+  text-align: center;
+}
+
 header>img{
   width: 200px;
   border-radius: 100%;
-border: 5px solid #075985;
+  border: 5px solid #075985;
+
 }
 
 .social-media>a>i{
@@ -106,8 +115,26 @@ border: 5px solid #075985;
   justify-content: center;
 }
 
+.contact{
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .contact>div>a>i{
   font-size: 24px;
+  transition: color 0.2s ease-in-out;
+  padding: 2px;
+}
+
+.contact>div>a>i:hover{
+  color:#075985
+}
+
+.ri-github-line{
+  margin-right: 0.5rem;
 }
 
 .buttons{
@@ -116,25 +143,23 @@ border: 5px solid #075985;
   align-items: center;
 }
 
-.buttons>div>a>i{
-  font-size: 24px;
-}
-
 .buttons>a{
   font-size: 16px;
 }
-
-.ri-download-line{
-  font-size: 16px;
+.CV-button>i::before{
+  background-color: #111827;
+  margin-left: 0.5rem;
+  border-radius: 100%;
+  padding: 5px;
 }
 
 .CV-button{
-  background-color: var(--dark-gray);
+  background-color: #075985;
   color: var(--light-gray);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-radius: 0.5rem;
   display: inline-flex;
-    align-items: center;
+  align-items: center;
 }
 
 /* tabs */
@@ -147,7 +172,7 @@ section>ul{
   width: fit-content;
   border-radius: 10px;
   gap:0.5rem;
-  background-color: #111827;
+  background-color: #075985;
 }
 ul>button{
   padding: 0.5rem;
@@ -159,7 +184,7 @@ ul>button{
 }
 
 ul>button:hover{
-  background-color: #075985aa;
+  background-color: #111827aa;
 }
 
 [data-content] {
@@ -173,7 +198,7 @@ ul>button:hover{
 }
 
 .filter-tab-active {
-  background-color: #075985
+  background-color: #111827
 }
 
 /* portfolio */
@@ -254,4 +279,5 @@ li>img{
 
 footer{
   text-align: center;
+  margin-top: 1rem;
 }
