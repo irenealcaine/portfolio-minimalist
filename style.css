@@ -112,6 +112,11 @@ header>img{
   margin-left: 0.5rem;
   border-radius: 100%;
   padding: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.CV-button:hover>i::before{
+  background-color: #075985
 }
 
 .CV-button{
@@ -123,6 +128,13 @@ header>img{
   justify-content: center;
   align-items: center;
   width: 100%;
+  border:4px solid #075985;
+  transition: all 0.5s ease-in-out;
+}
+
+.CV-button:hover{
+  background-color:  #111827;
+  border:4px solid #075985;
 }
 
 /* tabs */
@@ -231,7 +243,7 @@ ul>button:hover{
 }
 
 #contact>div>a:hover{
-  background-color: #111827;
+  background-color: #075985;
   font-size: 1.5rem;
   color:#f3f4f6
 }
