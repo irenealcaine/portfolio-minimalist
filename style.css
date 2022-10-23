@@ -122,7 +122,7 @@ header>img{
 .CV-button{
   background-color: #075985;
   color: var(--light-gray);
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  padding: 0.75rem;
   border-radius: 0.5rem;
   display: inline-flex;
   justify-content: center;
@@ -220,16 +220,14 @@ ul>button:hover{
 }
 
 
-#contact>div{
-  display: flex;
-  flex-direction: column;
+#contact{
   align-items: flex-start;
   justify-content: center;
   width: 100%;
   gap:1rem
 }
 
-#contact>div>a{
+#contact>a{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,7 +240,17 @@ ul>button:hover{
   transition: all 0.5s ease-in-out;
 }
 
-#contact>div>a:hover{
+#contact>a>i{
+  font-size: 2rem;
+  color:#075985;
+  transition: all 0.5s ease-in-out;
+}
+
+#contact>a:hover>i{
+  color:#111827
+}
+
+#contact>a:hover{
   background-color: #075985;
   font-size: 1.5rem;
   color:#f3f4f6
