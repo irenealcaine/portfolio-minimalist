@@ -19,7 +19,7 @@ ScrollReveal().reveal('.ocupation', { delay: 300, origin: "right", distance: "16
 ScrollReveal().reveal('.social-media', { delay: 400, origin: "left", distance: "160px", scale: 0.9 });
 ScrollReveal().reveal('.buttons', { delay: 500, origin: "right", distance: "160px", scale: 0.9 });
 ScrollReveal().reveal('main', { delay: 700, origin: "bottom", distance: "160px", scale: 1 });
-ScrollReveal().reveal('.CV', { delay: 800, origin: "bottom", distance: "160px", scale: 0.9 });
+ScrollReveal().reveal('.CV', { delay: 100, origin: "bottom", distance: "160px", scale: 0.9 });
 
 //tabs
 const tabs = document.querySelectorAll("[data-target]");
